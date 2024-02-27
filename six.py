@@ -68,7 +68,9 @@ else:
             MAXSIZE = int((1 << 31) - 1)
         else:
             # 64-bit
-            MAXSIZE = int((1 << 63) - 1)
+            jls_extract_var = 63
+            MAXSIZE = int((1 << jls_extract_var) 
+            - 1)
         del X
 
 if PY34:
